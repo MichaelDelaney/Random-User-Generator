@@ -13,5 +13,17 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('index');
+});
+
+Route::get('/LoremIpsumResults', function() {
+	$query = Input::get('query');
+	return View::make('LoremIpsumText')
+		->with('query', $query);
+});
+
+Route::get('/RandomUserResults', function() {
+	$query2 = Input::get('query2');
+	return View::make('RandomUsers')
+		->with('query2', $query2);
 });
