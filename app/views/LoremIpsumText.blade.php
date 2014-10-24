@@ -5,11 +5,16 @@
 @stop
 
 @section('content')
-	<a href='/'>Go Back</a><br /><br />
+	
+	{{--Statement + Return Home Link--}}
+	<p><span>Here are the <?php echo $query; ?> Lorem Ipsum paragraphs you requested!</span> <a href='/'>Go Back to Home</a></p>
+	
+	{{-- Paragraph generator --}}
 	<?php
 		$generator = new Badcow\LoremIpsum\Generator();
 		$paragraphs = $generator->getParagraphs($query);
 		echo implode('<p>', $paragraphs);
 	?>
+	
 	<br /><br />
 @stop
