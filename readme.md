@@ -10,7 +10,7 @@
 
 ----
 ## Demo
-*  Screencast URL will be uploaded soon (Screencast Due Oct. 28th 5:30pm)
+*  Screencast URL: http://screencast.com/t/RdDm47P87
 
 ----
 ## Details
